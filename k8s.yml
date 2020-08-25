@@ -13,7 +13,8 @@ spec:
         app: hello-world
     spec:
       containers:
-      - image: okteto/hello-world:python
+ #     - image: okteto/hello-world:python
+      - image: registry.cloud.okteto.net/listenfree/hello-world:okteto
         name: hello-world
 
 ---
