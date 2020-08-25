@@ -1,5 +1,6 @@
 name: hello-world
-image: okteto/hello-world:python-dev
+#image: okteto/hello-world:python-dev
+image: registry.cloud.okteto.net/listenfree/hello-world:okteto
 command: [ "python", "app.py"]
 environment:
   - FLASK_ENV=development
