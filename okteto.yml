@@ -5,7 +5,7 @@ command: [ "python", "app.py"]
 environment:
   - FLASK_ENV=development
 forward:
-  - 8080:8080
+  - 8080:8000
 reverse:
   - 3500:3500
 persistentVolume:

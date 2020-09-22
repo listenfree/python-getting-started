@@ -1,12 +1,13 @@
 import os
 import pydevd_pycharm
-from flask import Flask
+from flask import Flask, request
 
 app = Flask(__name__)
-
-@app.route('/')
+@app.route('/', methods=["GET", "POST"])
 def hello_world():
-    msg = 'Hello World! too difficult'
+    msg = 'Okteto hard to use'
+    dd = request.form.to_dict()
+    print(dd)
     return msg
 
 def attach():
