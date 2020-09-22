@@ -1,7 +1,7 @@
 name: hello-world
 #image: okteto/hello-world:python-dev
 image: registry.cloud.okteto.net/listenfree/hello-world:okteto
-command: [ "python", "app.py"]
+command: ["gunicorn", "-k", "gevent", "app:app"]
 environment:
   - FLASK_ENV=development
 forward:
